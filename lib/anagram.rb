@@ -3,7 +3,6 @@ class Anagram
 
 attr_accessor :word
 @anagram_sorted = []
-@word_match=[]
 
 
 def initialize (word)
@@ -12,17 +11,18 @@ def initialize (word)
 @anagram_sorted = @word_anagram.sort
 end
 def match (strings)
+  word_match=[]
     stringlist= strings
     stringlist.each do |word|
     letter_array = word.split("")
     letter_sorted =letter_array.sort
     if @anagram_sorted ==letter_sorted
-      @word_match << word.split
-      return @word_match
+      word_match << word.split
+      return word_match
     end
 
     end
-return @word_match
+return word_match
 end
 
 end
