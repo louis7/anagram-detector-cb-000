@@ -17,7 +17,8 @@ def match (strings)
     letter_array = word.split("")
     letter_sorted =letter_array.sort
     if @anagram_sorted ==letter_sorted
-      return word.split
+      @word_match << word.split
+      return @word_match
     else
       return @word_match
     end
@@ -27,6 +28,3 @@ def match (strings)
 end
 
 end
-
-listen = Anagram.new("listen")
-listen.match(%w(enlists google inlets banana))
