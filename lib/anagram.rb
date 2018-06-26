@@ -12,7 +12,6 @@ def initialize (word)
 @word_anagram =word.split("")
 @anagram_sorted = @word_anagram.sort
 end
-
 def match (strings)
     stringlist= strings
     stringlist.each do |word|
@@ -27,5 +26,10 @@ def match (strings)
     end
 
 end
+binding.pry
 
 end
+
+listen = Anagram.new("listen")
+listen.match(%w(enlists google inlets banana))
+ 
