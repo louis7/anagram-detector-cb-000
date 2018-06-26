@@ -19,12 +19,10 @@ def match (strings)
     if @anagram_sorted ==letter_sorted
       @word_match << word.split
       return @word_match
-    else
-      return @word_match
     end
 
     end
-
+return @word_match
 end
 
 end
