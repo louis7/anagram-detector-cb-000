@@ -18,7 +18,6 @@ def match (strings)
     letter_sorted =letter_array.sort
     if @anagram_sorted ==letter_sorted
       word_match << word.split.join
-      return word_match
     end
 
     end
