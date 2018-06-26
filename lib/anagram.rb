@@ -19,7 +19,7 @@ def match (strings)
     letter_array = word.split("")
     letter_sorted =letter_array.sort
     if @anagram_sorted ==letter_sorted
-      return word
+      return word.split
     else
       return @word_match
     end
